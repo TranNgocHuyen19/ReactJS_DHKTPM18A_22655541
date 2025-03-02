@@ -1,0 +1,35 @@
+footer .footer-content {
+    display: flex;
+    color: #fff;
+    background-color: rgb(54, 54, 117);
+    padding: 30px;
+}
+
+footer .footer-content .footer-content-left {
+    text-align: left;
+}
+
+
+footer .footer-content .footer-content-left input {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+footer .footer-content .footer-content-left .newsletter {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-content .footer-content-left button {
+    background: #f34c84;
+    padding: 3px 10px;
+    margin-left: 10px;
+}
+
+footer a {
+    color: #fff;
+}
+
