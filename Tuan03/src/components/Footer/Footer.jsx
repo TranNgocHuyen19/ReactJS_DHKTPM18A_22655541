@@ -1,65 +1,77 @@
-import './Footer.css'
 const Footer = () => {
-    return (
-        <>
-            <footer>
-                <div className="footer-content">
-                    <div className="footer-content-left">
-                        <div className="footer-content-top">
-                            <h3>About Us</h3>
-                            <p>Welcome to our website, a wonderful place to explore and learn how to cook like a pro.</p>
-                            <div className="newsletter">
-                                <input type="email" placeholder="Enter your email" />
-                                <button>Send</button>
-                            </div>
-                        </div>
-                        <div className="footer-content-bottom">
-                            <p>&copy; 2023 Your Company. All rights reserved.</p>
-                        </div>
+  return (
+    <footer className="grid grid-flow-row grid-cols-12 gap-2 px-16 py-9 bg-black text-white">
+      <div className="col-span-6 ">
+        <h2 className="font-bold mb-3">About Us</h2>
+        <p className="w-3/4 text-justify">
+          Welcome to our website, a wonderful place to explore and learn how to
+          cook like a pro
+        </p>
+        <div className="flex items-center mt-3">
+          <input
+            className="px-3 py-2 w-3/5 rounded-lg bg-white text-black"
+            placeholder="Enter your Email"
+          />
+          <button className="bg-pink-500 mx-5 px-3 py-2 rounded-md">
+            Send
+          </button>
+        </div>
+      </div>
+      <div className="col-span-1 row-span-2"></div>
+      <div className="col-span-3">
+        <h2 className="font-bold">Learn more</h2>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">Our Cooks</div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">
+          See Our Features
+        </div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">FAQ</div>
+      </div>
 
-                    </div>
-                    <div className="footer-content-right">
-                        <div className="footer-content-right-section">
-                            <div className="footer-section">
-                                <div className="footer-section-top">
-                                    <h3>Learn more</h3>
-                                    <ul>
-                                        <li><a href="#">Learn More</a></li>
-                                        <li><a href="#">Our Cooks</a></li>
-                                        <li><a href="#">See Our Features</a></li>
-                                    </ul>
-                                </div>
-                                <div className="footer-section-bottom">
-                                    <h3>Shop</h3>
-                                    <ul>
-                                        <li><a href="#">Gift Subscription</a></li>
-                                        <li><a href="#">Send Us  Feedback</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="footer-section-right-section">
-                            <h3>Recipes</h3>
-                            <ul>
-                                <li><a href="#">What to Cook This Week</a></li>
-                                <li><a href="#">Posts</a></li>
-                                <li><a href="#">Dinner</a></li>
-                                <li><a href="#">Healthy</a></li>
-                                <li><a href="#">Vegetarian</a></li>
-                                <li><a href="#">Vegan</a></li>
-                                <li><a href="#">Christmas</a></li>
-                            </ul>
-                        </div>
-                    </div>
+      <div className="col-span-2 row-span-2">
+        <h2 className="font-bold">Recipes</h2>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">
+          What to cook this week
+        </div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">Pasta</div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">Dinner</div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">Healthy</div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">
+          Vegetarian
+        </div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">Vegan</div>
+        <div className="my-2 hover:text-pink-500 cursor-pointer">Christmas</div>
+      </div>
 
-                </div>
+      <div className="col-span-6 flex items-end">
+        <div className="flex items-center">
+          <img
+            className="avatar size-16 "
+            src={"/dauBepTrang.png"}
+            alt="Example"
+          />
+          <h2 className="font-bold mx-4 text-3xl">Chefify</h2>
+          <div className="mx-4 text-xs font-bold relative top-1">
+            2023 Chefify Company
+          </div>
+          <div className="mx-4 text-xs font-bold relative top-1">
+            Terms of Servicel Privacy Policy
+          </div>
+        </div>
+      </div>
 
-            </footer>
-        </>
-
-
-    )
-
-}
+      <div className="col-span-3">
+        <div className="relative bottom-0 mt-5">
+          <h2 className="font-bold">Shop</h2>
+          <div className="my-2 hover:text-pink-500 cursor-pointer">
+            Gift Subscription
+          </div>
+          <div className="my-2 hover:text-pink-500 cursor-pointer">
+            Send Us Feedback
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
